@@ -2,22 +2,17 @@
 <?php
 	include  'student.php';
 	require_once 'auth.php';
-	require_once 'database.php';
+	require_once 'databasehelper.php';
+
 
 	$student = new Student;
-    	$student->createWithPost($_POST);
+    $student->createWithPost($_POST,0);
 
-    //Connect Database;
-	
- 	 //$stmt = $conn->prepare("SELECT id, firstname, lastname FROM MyGuests"); 
-	 //$stmt->execute();
-
-        //Create Login here;
-    
-	//$conn=null;
-	echo "Hello from php : ".$student->email;
+    registerUser($student);
+	echo "Hello from php : ".$student->location;
 	echo $student->password;
     //Disconnect Database;
     
+
 
 ?>
