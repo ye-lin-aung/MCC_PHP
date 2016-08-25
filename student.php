@@ -15,7 +15,7 @@ class Student{
 	function createWithPost( $post_args) {
 		$this->name = $post_args['name'];
 		$this->email = $post_args['email'];
-		$this->password = $post_args['password'];
+		$this->password = md5($post_args['password']);
 		$this->location = $post_args['location'];
 		$this->skill = $post_args['skill'];
 		$this->experience = $post_args['experience'];
@@ -24,7 +24,7 @@ class Student{
 
 	function create($name,$email,$password,$loction,$skill,$experience,$description){
 		$this->name = $name;
-		$this->password = $password;
+		$this->password = md5($password);
 		$this->email = $email;
 		$this->location = $location;
 		$this->skill = $skill;
