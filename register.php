@@ -9,7 +9,7 @@
     $student->createWithPost($_POST,0);
 
     registerUser($student);
-	echo "Hello from php : ".$student->location;
+	echo "Hello from php : ".$student->skill;
 	echo $student->password;
     //Disconnect Database;
     

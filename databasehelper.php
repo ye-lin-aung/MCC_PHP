@@ -3,9 +3,6 @@
 
 function registerUser($user){
 		include 'database.php';
- // $stmt = $conn->prepare("INSERT INTO MyGuests (firstname, lastname, email) 
- //    VALUES (:firstname, :lastname, :email)");
-
 		$stmt = $conn->prepare("INSERT INTO student (name,email,password,location,skills,experience,description,gender,admin) VALUES (:name,:email,:password,:location,:skills,:exp,:des,:gender,:admin)"); 
 	 	$stmt->bindParam(':name',$name);
 	 	$stmt->bindParam(':email',$email);
@@ -21,7 +18,7 @@ function registerUser($user){
 	 	$email = $user->email;
 	 	$password = $user->password;
 	 	$location = $user->location;
-	 	$skill = $user->skill;
+	 	$skills = $user->skill;
 	 	$exp = $user->experience;
 	 	$des = $user->description;
 	 	$gender = $user->gender;
