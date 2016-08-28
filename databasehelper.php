@@ -1,5 +1,22 @@
 <?php
 
+function isUserAlreadyExists($user){
+	include 'database.php';
+		$stmt = $conn->prepare("SELECT * FROM student WHERE name = :username");
+		$stmt->bindParam(':username',$name);
+		$name = $user->name;
+		$stmt->execute();
+		$result=$stmt->fetchAll();
+		$conn=null;
+		
+		if (count($result)>0){
+
+		return true;
+		}else{
+		return false;
+		}
+
+}
 
 function registerUser($user){
 		include 'database.php';
@@ -24,10 +41,10 @@ function registerUser($user){
 	 	$gender = $user->gender;
 	 	$admin = $user->admin;
 
-	 	$stmt->execute();
-	 	echo "New records created successfully";
-	
-	$conn=null;
+	 $is_Success = $stmt->execute();
+	 	
+	 $conn=null;
+	return $is_Success;
 }
 
 

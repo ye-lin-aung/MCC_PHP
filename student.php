@@ -1,7 +1,4 @@
-
 <?php
-//-- TODO desc user Sun Aug 14 10:44:19 2016
-
 class Student{
 
 	private $name;
