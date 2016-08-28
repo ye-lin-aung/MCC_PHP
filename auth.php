@@ -8,7 +8,6 @@ function login(){
 	 $stmt = $conn->prepare("SELECT id, firstname, lastname FROM MyGuests"); 
 	     $stmt->execute();
 
-        //Create Login here;
     
 	$conn=null;
 }

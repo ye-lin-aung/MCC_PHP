@@ -11,6 +11,7 @@
     registerUser($student);
 	echo "Hello from php : ".$student->skill;
 	echo $student->password;
+
     //Disconnect Database;
     
 
