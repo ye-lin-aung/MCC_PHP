@@ -9,7 +9,7 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<h1 class="col-xs-7 col-xs-offset-2  col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-lg-6 col-lg-offset-3">Students Register</h1><br>
+			<h1 class="col-xs-7 col-xs-offset-2  col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-lg-6 col-lg-offset-3">Admin Login</h1><br>
 		</div>
 	</br>
 	<?php if (isset($_SESSION['login_error'])): ?>
