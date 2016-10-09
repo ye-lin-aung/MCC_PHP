@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/bootswatch.css">
+	<link rel="stylesheet" href="../css/bootswatch.css">
 </head>
 <body>	
 	<div class="container">
@@ -17,7 +17,7 @@
 			<div class="alert alert-danger col-xs-7 col-xs-offset-2  col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-lg-6 col-lg-offset-3" role="alert"><?php echo $error ?></div>
 		<?php endforeach; ?>
 	<?php endif; ?>
-	<form action="reg.php" id="form" method="POST">
+	<form action="reg.php"  id="form" method="POST">
 		<div class="row">
 			<div class="form-group col-xs-7 col-xs-offset-2  col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-lg-6 col-lg-offset-3">
 				<label for="name" class>Name</label>
@@ -87,8 +87,8 @@
 			</div>
 		</form>
 	</div>
-	<script type="text/javascript" src="javascript/jquery.js"></script>
-	<script type="text/javascript" src="javascript/learn.js"></script>
+	<script type="text/javascript" src="../javascript/jquery.js"></script>
+	<script type="text/javascript" src="../javascript/learn.js"></script>
 </body>
 </html>
 

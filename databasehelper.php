@@ -8,9 +8,7 @@ function isUserAlreadyExists($user){
 		$stmt->execute();
 		$result=$stmt->fetchAll();
 		$conn=null;
-		
 		if (count($result)>0){
-
 		return true;
 		}else{
 		return false;
