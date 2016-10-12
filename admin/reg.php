@@ -1,12 +1,12 @@
 <?php
 include  'admin.php';
-require_once '../database.php';
-require_once '../databasehelper.php';
+require_once 'db/database.php';
+require_once 'db/databasehelper.php';
 
 session_start();
 
 $required = array('name', 'password');
-// Loop over field names, make sure each one exists and is not empty
+
 $error = false;
 foreach($required as $field) {
 	if (empty($_POST[$field])) {
@@ -28,5 +28,5 @@ if ($error) {
 	}
 }
 
-    //Disconnect Database;
+
 ?>

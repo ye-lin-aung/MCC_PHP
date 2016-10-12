@@ -1,7 +1,7 @@
 <?php
 include  'student.php';
-require_once '../database.php';
-require_once '../databasehelper.php';
+require_once 'db/database.php';
+require_once 'db/databasehelper.php';
 
 session_start();
 
