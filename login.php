@@ -5,17 +5,14 @@
 		<?php endforeach; ?>
 	<?php endif; ?>
 
-	<form action="auth.php" method="POST">
+	<form action="../db/auth.php" method="POST">
 		
 		
 		<div class="form-group">
 			<label for="email">Email Address</label>
 			<input type="email" class="form-control" id="email" name="email" placeholder="Email Address">
 		</div>
-		
-
-
-		
+				
 		<div class="form-group">
 			<label for="password">Password</label>
 			<input type="password" class="form-control" id="password" name="password" placeholder="Password">
@@ -24,19 +21,19 @@
 
 		<div class="radio-inline">
 			<label>
-				<input type="radio" name="role" id="optionsRadios1" value="option1" checked>
+				<input type="radio" name="role" id="optionsRadios1" value="admin" checked>
 				Admin
 			</label>
 		</div>
 		<div class="radio-inline">
 			<label>
-				<input type="radio" name="role" id="optionsRadios2" value="option2">
+				<input type="radio" name="role" id="optionsRadios2" value="student">
 				Student
 			</label>
 		</div>
 		<div class="radio-inline">
 			<label>
-				<input type="radio" name="role" id="optionsRadios3" value="option3">
+				<input type="radio" name="role" id="optionsRadios3" value="employee">
 				Employee
 			</label>
 		</div>

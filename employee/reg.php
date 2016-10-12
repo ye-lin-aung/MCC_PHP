@@ -27,6 +27,5 @@ if ($error) {
 		header("Location:register.php");
 	}
 }
-
     //Disconnect Database;
 ?>
