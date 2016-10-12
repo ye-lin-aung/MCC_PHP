@@ -21,9 +21,9 @@ if ($error) {
 	if(!isEmployeeAlreadyExists($employee)){
 		registerEmployee($employee);
 		header("Location:../home.php");
-		unset($_SESSION['errors']);
+		unset($_SESSION['employee_errors']);
 	}else{
-		$_SESSION['errors'] = array("User already exists");
+		$_SESSION['employee_errors'] = array("User already exists");
 		header("Location:register.php");
 	}
 }

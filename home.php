@@ -1,17 +1,14 @@
+<?php session_start(); ?>
 <?php ?>
 <!DOCTYPE html>
 <html lang="en">
 <html>
 <head> <title> Dashboard </title>
-
 <link rel="stylesheet" href="css/bootswatch.css">
 <script src="javascript/jquery.js">
 </script>
 <script src="javascript/bootstrap.js">
 </script>
-
-
-
 </head>
 
 <body>
@@ -69,8 +66,9 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
 </div>
+
+<?php include('admin/login.php')?>
 </body>
 
 

@@ -21,9 +21,9 @@ if ($error) {
 	if(!isAdminAlreadyExists($admin)){
 		registerAdmin($admin);
 		header("Location:../home.php");
-		unset($_SESSION['errors']);
+		unset($_SESSION['admin_errors']);
 	}else{
-		$_SESSION['errors'] = array("User already exists");
+		$_SESSION['admin_errors'] = array("User already exists");
 		header("Location:register.php");
 	}
 }
