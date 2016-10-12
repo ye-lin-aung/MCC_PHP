@@ -1,19 +1,6 @@
-<!-- <?php session_start(); ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/bootswatch.css">
-</head>
-<body>
-	<div class="container"> -->
-		<!-- <div class="row"> -->
-		<h1>Login</h1><br>
-		<!-- </div> -->
-
-	<?php if (isset($_SESSION['employee_login_error'])): ?>
-		<?php foreach($_SESSION['emplyee_login_error'] as $error): ?>
+<h1>Login</h1><br>	
+	<?php if (isset($_SESSION['login_error'])): ?>
+		<?php foreach($_SESSION['login_error'] as $error): ?>
 			<div class="alert alert-danger" role="alert"><?php echo $error ?></div>
 		<?php endforeach; ?>
 	<?php endif; ?>
@@ -58,10 +45,4 @@
 		</div>
 
 
-	</form>
-	<!-- 	</div> -->
-
-
-	<!-- </body> -->
-	<!-- </html> -->
-
+</form>
