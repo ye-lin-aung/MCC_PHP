@@ -1,12 +1,12 @@
 <h1>Login</h1><br>	
-	<?php if (isset($_SESSION['login_error'])): ?>
-		<?php foreach($_SESSION['login_error'] as $error): ?>
+
+		<?php if (isset($_SESSION['login_errors'])): ?>
+		<?php foreach($_SESSION['login_errors'] as $error): ?>
 			<div class="alert alert-danger" role="alert"><?php echo $error ?></div>
 		<?php endforeach; ?>
-	<?php endif; ?>
+		<?php endif; ?>
 
 	<form action="../db/auth.php" method="POST">
-		
 		
 		<div class="form-group">
 			<label for="email">Email Address</label>
