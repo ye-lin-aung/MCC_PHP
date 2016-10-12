@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<!-- <?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +6,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="../css/bootswatch.css">
 </head>
-<body>	
+<body>	 -->
 	<div class="container">
 		<div class="row">
 			<h1 class="col-xs-7 col-xs-offset-2  col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-lg-6 col-lg-offset-3">Admin Register</h1><br>
@@ -87,8 +87,8 @@
 			</div>
 		</form>
 	</div>
-	<script type="text/javascript" src="../javascript/jquery.js"></script>
+	<!-- <script type="text/javascript" src="../javascript/jquery.js"></script>
 	<script type="text/javascript" src="../javascript/learn.js"></script>
-</body>
+<!-- </body> -->
 </html>
-
+ -->
