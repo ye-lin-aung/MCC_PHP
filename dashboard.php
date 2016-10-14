@@ -5,8 +5,8 @@
 <body>
 	<?php if (isset($_SESSION['email'])):  ?>
 		<?php echo $_SESSION['email'] ?>
-		
-	<?php else:  echo "Hello"; ?>
+
+	<?php else:  header("Location:../home.php"); ?>
 
 	<?php endif; ?>
 
