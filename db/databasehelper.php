@@ -16,6 +16,70 @@ function isUserAlreadyExists($user){
 
 }
 
+
+function admin_login($user,$password){
+	include 'database.php';
+		$stmt = $conn->prepare("SELECT * FROM admin WHERE email = :username AND password = :password");
+		$stmt->bindParam(':username',$name);
+		$stmt->bindParam(':password',$password);
+		$name = $user;
+		$password = md5($password);
+		$stmt->execute();
+		$result=$stmt->fetchAll();
+		$conn=null;
+		if (count($result)>0){
+	
+		return true;
+		}else{
+	
+		return false;
+		}
+
+}
+
+function employee_login($user,$password){
+	include 'database.php';
+		$stmt = $conn->prepare("SELECT * FROM employee WHERE email = :username AND password = :password");
+		$stmt->bindParam(':username',$name);
+		$stmt->bindParam(':password',$password);
+		$name = $user;
+		$password = md5($password);
+		$stmt->execute();
+		$result=$stmt->fetchAll();
+		$conn=null;
+		if (count($result)>0){
+		echo "true";
+		return true;
+		}else{
+		echo "false";
+		return false;
+		}
+
+}
+
+
+
+function student_login($user,$password){
+	include 'database.php';
+		$stmt = $conn->prepare("SELECT * FROM student WHERE email = :username AND password = :password");
+		$stmt->bindParam(':username',$name);
+		$stmt->bindParam(':password',$password);
+		$name = $user;
+		$password = md5($password);
+		$stmt->execute();
+		$result=$stmt->fetchAll();
+		$conn=null;
+		if (count($result)>0){
+		echo "true";
+		return true;
+		}else{
+		echo "false";
+		return false;
+		}
+
+}
+
+
 function isAdminAlreadyExists($user){
 	include 'database.php';
 		$stmt = $conn->prepare("SELECT * FROM admin WHERE name = :username");
